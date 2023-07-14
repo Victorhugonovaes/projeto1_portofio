@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family= Open +Sans:wght@800 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(223, 217, 217);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color:rgb(35, 131, 209) ;
+    text-decoration: none;
+   
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color:rgb(35, 131, 209) ;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color:rgb(35, 131, 209);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform.4s;
+}
+
+.navigation  a:hover::after{
+    transform: scaleY(1);
+}
+
+/*texto e img*/
+
+
+.hero{   
+    background: rgb(223, 217, 217);
+position: relative;
+min-height: 200vh;
+display: flex; 
+flex-direction: column;
+justify-content: center;  
+
+
+margin-top: -200px;
+
+}   
+
+/* não apagar align items */
+align-items: center;
+
+.hero .texttela{
+    position: relative;
+    max-width: 10px;
+}
+
+.hero .texttela h1{
+    color: #333;
+    font-size: 4.5rem;
+    line-height: 110%;
+}
+
+.hero .texttela p{
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 110%;
+
+    margin-bottom: 1.2rem;
+
+    padding: 0.9rem;
+}
+
+.hero .texttela h4{
+    display: inline-flex;
+
+    color: #333;
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: bold;
+
+    margin-bottom: 3.2rem;
+}
+
+.hero .texttela h4 span{
+    color:rgb(19, 102, 170) ;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+/*img*/
+
+ .hero .imagebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  
+align-items: center;
+margin-top: -400px;
+margin-left: 500px;
+
+    animation: flutuar 3s infinite backwards;
+    position: relative;
+}
+
+.imagebox img{
+    width: 25rem;
+    min-width: 12.5rem;
+    display: block;
+    margin-inline: auto;
+    filter: contrast(1.1); 
+}
+
+
+/*movimento imagem menino*/
+@keyframes flutuar {
+    0% {
+      transform: translateY(2rem);
+    }
+    50% {
+      transform: translateY(-2rem);
+    }
+    100% {
+      transform: translateY(2rem);
+    }
+  }
+
+
+
+
